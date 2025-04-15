@@ -3,6 +3,8 @@
 '''
 Use this file to define your settings for a training run, or
 to generate a synthetic image using a trained generator.
+1 for training, 
+0 for testing
 '''
 
 from slicegan import model, networks, util

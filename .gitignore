@@ -1,5 +1,6 @@
 Trained_Generators/NMC
-Trained_Generators/nano-foam
+Trained_Generators/nano-foam/nano-foam_Gen.pt
+Trained_Generators/nano-foam copy
 slicegan/__pycache__
 
 
