@@ -202,8 +202,9 @@ def test_img(pth, imtype, netG, nz = 64, lf = 4, periodic=False):
             gb = gb[:,:-1]
         if periodic[2]:
             gb = gb[:,:,:-1]
-    tif = np.int_(gb)
-    tifffile.imwrite(pth + '.tif', tif)
+    # tif = np.int_(gb)
+    tif = np.uint8(gb.clip(0, 255)) 
+    tifffile.imwrite(pth + '.tif', tif, imagej=True)
 
     return tif, raw, netG
 
