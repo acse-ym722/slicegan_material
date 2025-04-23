@@ -11,7 +11,8 @@ from slicegan import model, networks, util
 import argparse
 # Define project name
 # Project_name = 'NMC'
-Project_name = 'nano-foam'
+# Project_name = 'nano-foam'
+Project_name = 'nano_foam_low_res'
 # Specify project folder.
 Project_dir = 'Trained_Generators'
 # Run with False to show an image during or after training
@@ -33,7 +34,8 @@ img_channels = 2
 # greyscale. nphase can be, 'tif2D', 'png', 'jpg', tif3D, 'array')
 data_type = 'jpg'
 # Path to your data. One string for isotrpic, 3 for anisotropic
-data_path = ['Examples/nano_foam.tif']
+# data_path = ['Examples/nano_foam.tif']
+data_path = ['Examples/1_17_crop_seg.jpg']
 # data_path = ['Examples/NMC.tif']
 
 ## Network Architectures
